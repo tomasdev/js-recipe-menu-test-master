@@ -1,0 +1,9 @@
+.main-navigation {
+    padding: 0 0 30px;
+}
+
+@media screen and (min-width: 992px) {
+    .recipes__row {
+        padding: 0 0 30px;
+    }
+}

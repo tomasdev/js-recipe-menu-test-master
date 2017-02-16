@@ -1,0 +1,14 @@
+{
+  "name": "js-recipe-test",
+  "version": "1.0.0",
+  "description": "Test for application at BA",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-wrap": "^0.13.0",
+    "handlebars": "^4.0.6"
+  },
+  "author": "Tomas Roggero <hola@tomasroggero.com>"
+}

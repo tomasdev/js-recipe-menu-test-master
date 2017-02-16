@@ -1,0 +1,26 @@
+<div class="row recipes__row">
+    {{#each recipes}}
+    <div class="col-md-4">
+        <div class="recipe">
+            <img class="recipe__img" src="{{high_menu_thumb_url}}" alt="{{title}}">
+
+            <div class="recipe__description">
+                <h2 class="recipe__title">{{title}}</h2>
+                <h3 class="recipe__subtitle">{{sub_title}}</h3>
+            </div>
+
+            {{#if vegetarian}}<img src="/assets/images/icon-veg.png" class="icon-veg mr-5" alt="Vegetarian">{{/if}}
+
+            {{#if wine_pairing_id}}
+            <button class="btn btn-default" data-wine="{{wine_pairing_id}}">
+                <img class="icon-wine mr-5" src="/assets/images/icon-wine.png" alt="">
+                View Wine Pairing
+            </button>
+            {{/if}}
+        </div>
+    </div>
+    {{#if break}}
+</div><div class="row">
+    {{/if}}
+    {{/each}}
+</div>

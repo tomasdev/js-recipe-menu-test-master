@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blue Apron Take Home</title>
-
-  <link href="assets/_defaults/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/_defaults/css/default.css" rel="stylesheet">
-  <link href="assets/css/styles.css" rel="stylesheet">
+<title>Blue Apron Take Home</title>
+<link href="assets/_defaults/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/_defaults/css/default.css" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
 </head>
 
 <body>
+<!-- I think 4 space tabs are better for readability, and space isn't a concern on a gzip enabled environment,
+    and whitespace can be removed by a back-end process anyway -->
+<div class="container">
+    <div class="content-wrap">
+        <div data-template="navigation"></div>
+        <div data-template="recipes"></div>
+    </div>
+</div>
 
-  <script src="assets/_defaults/js/jquery-1.12.1.min.js"></script>
-  <script src="assets/_defaults/js/bootstrap.min.js"></script>
-  <script src="assets/_defaults/js/jquery.mockjax.min.js"></script>
-  <script src="assets/_defaults/js/mocks/mockjax.js"></script>
-  <script src="assets/_defaults/js/handlebars.js"></script>
-  <script src="assets/_defaults/js/handlebars_template.js"></script>
-  <script src="assets/js/scripts.js"></script>
+<div class="modal fade wine-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body" data-template="wine"></div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/_defaults/js/jquery-1.12.1.min.js"></script>
+<script src="assets/_defaults/js/bootstrap.min.js"></script>
+<script src="assets/_defaults/js/jquery.mockjax.min.js"></script>
+<script src="assets/_defaults/js/mocks/mockjax.js"></script>
+<script src="assets/_defaults/js/handlebars.js"></script>
+<script src="assets/_defaults/js/handlebars_template.js"></script>
+<script src="assets/js/templates.js"></script>
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>

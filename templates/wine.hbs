@@ -1,0 +1,24 @@
+{{#each wines}}
+<div class="wine">
+    <h2 class="wine__title text-center">
+        <img class="mr-10" src="assets/images/icon-wine-lg.png" alt="">
+        {{name}} {{varietal}} {{year}}
+    </h2>
+
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img class="mr-10 img-responsive" src="{{bottle_image_url}}" alt="{{name}}">
+        </div>
+
+        <div class="col-md-8">
+            <h4>Description</h4>
+            <p>{{description}}</p>
+
+            <div class="fun-fact">
+                <h4 class="fun-fact__title">Fun Fact</h4>
+                <p>{{fun_facts}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
